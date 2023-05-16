@@ -1,0 +1,162 @@
+.slider{
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.slider img{
+    width: 90%;
+
+    margin-left: 7%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.navigation .btn-nav {
+    margin-left: 33%;
+    margin-right: -32%;
+    transform: translate(0, 10%);
+    border-radius: 10%;
+    background-color: orangered;
+    width: 77px;
+    height: 55px;
+    color: #1d0303;
+    transition: all .3s ease-in-out;
+    border: 1px solid rgb(12, 4, 1);
+}
+.btn-nav:active {
+    transform: scale(75%);
+}
+.slider .navigation .btn-nav:hover{
+    background-color: black;
+    color: orangered;
+}
+
+.slider .navigation .btn-nav.btn-prev{
+    left: 0;
+}
+
+.slider .navigation .btn-nav.btn-next{
+    right: 0;
+}
+#form-register {
+    background-color: #052445;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+input[type="text"] ~ span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2b382e4a;
+    transition: width 0.3s;
+}
+
+input[type="text"]:focus ~ span::before {
+    width: 100%;
+}
+
+
+input[type="date"] {
+    width: 90%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+input[type="date"] ~ span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2b382e4a;
+    transition: width 0.3s;
+}
+
+input[type="date"]:focus ~ span::before {
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #2b382e4a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 80%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b382ecb;
+}
+.form-group > .radio{
+    display: inline-block;
+}
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+
+}
+.form-group span{
+    color: red;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body >
+<div class="slider">
+    <img id="slider_img" src="img/img.png" alt="">
+    <div class="navigation">
+        <button class="btn-nav btn-next" onclick="start()">&#xab;</button>
+        <button class="btn-nav btn-prev" onclick="prev()">&#x2039;</button>
+        <button class="btn-nav btn-next" onclick="Play()">&#9655;</button>
+        <button class="btn-nav btn-next" onclick="cleart()">&#8718;</button>
+        <button class="btn-nav btn-next" onclick="next()">&#x203A;</button>
+        <button class="btn-nav btn-next" onclick="end()">&#xbb;</button>
+    </div>
+</div>
+<form id="form-register" action="" method="get">
+    <H2>Đặt vé máy bay</H2>
+    <div class="form-group">
+        <label for="username">Họ và tên</label>
+        <input type="text" class="form-group" placeholder="Họ và Tên" name="username" id="username">
+        <span></span>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-group" placeholder="Vui lòng  nhập email" name="email" id="email">
+        <span></span>
+    </div>
+    <div class="form-group">
+        <label for="gioitinh">Giới Tính</label><br>
+        <label class="radio" for="">Nam</label>
+        <input type="radio" class="gioitinh" class="form-group" name="gioitinh" id="nam">
+        <label class="radio" for="">Nữ</label>
+        <input type="radio" class="gioitinh" class="form-group" name="gioitinh" id="nữ">
+        <span></span>
+    </div>
+    <div class="form-group">
+        <input type="date" class="form-group" name="date" id="date">
+        <span></span>
+    </div>
+    <div class="form-group">
+        <label for="diaChi">Địa chỉ</label>
+        <input type="text" class="form-group" placeholder="Địa chỉ" name="diaChi" id="diaChi">
+        <span></span>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-group" placeholder="Số điện thoại" name="soDienThoai" id="soDienThoai">
+        <span></span>
+    </div>
+    <button type="submit" >Cập nhật</button>
+</form>
+<script src="js/js.js"></script>
+</body>
+</html>
