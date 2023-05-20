@@ -1,162 +1,202 @@
-.slider{
-    position: relative;
-    padding-bottom: 70px;
+.container{
+    margin: 0 auto;
 }
-
-.slider img{
-    width: 90%;
-
-    margin-left: 7%;
-    border-radius: 10px;
-    object-fit: cover;
+body{
+    padding:0px;
+    margin:0px;
 }
-.navigation .btn-nav {
-    margin-left: 33%;
-    margin-right: -32%;
-    transform: translate(0, 10%);
-    border-radius: 10%;
-    background-color: orangered;
-    width: 77px;
-    height: 55px;
-    color: #1d0303;
-    transition: all .3s ease-in-out;
-    border: 1px solid rgb(12, 4, 1);
+header{
+    margin: 0;
+    width: auto;
 }
-.btn-nav:active {
-    transform: scale(75%);
+header img{
+    width: 100%;
+    vertical-align: middle;
 }
-.slider .navigation .btn-nav:hover{
-    background-color: black;
+.nav {
+    display: flex;
+    width: auto;
+    margin: 0;
+    overflow: hidden;
+    line-height:40px;
+    background-color: rgba(49, 28, 105, 0.87);
+}.menu>ul>li{
+     display:inline-block;
+     margin-left: 23%;
+     margin-right: -17%;
+ }
+.menu>ul>li>a{
+    display: block;
+    position:relative;
+}
+.menu>ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    background-color: rgba(49, 28, 105, 0.87);
+}
+.menu>ul>li>a{
+    text-decoration:none;
+    font-size:larger;
+    color:white;
+    padding:0 10px;
+    line-height:40px;
+}
+.menu>ul>li>a:hover{
     color: orangered;
 }
-
-.slider .navigation .btn-nav.btn-prev{
-    left: 0;
+.menu ul ul{
+    position:absolute;
+    display:none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius:3px;
+    width:200px;
+    background-color: white;
+    box-shadow:0 0 1px white;
 }
-
-.slider .navigation .btn-nav.btn-next{
-    right: 0;
+.menu ul ul a{
+    display:block;
+    line-height:30px;
+    color:orangered;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    padding:0 10px;
 }
-#form-register {
-    background-color: #052445;
+.menu>ul>li:hover>ul{
+    display: block;
+}
+.menu ul ul a:hover{
+    background-color:black;
     color: white;
-    border-radius: 5px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    vertical-align: middle;
+}
+.text{
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+}
+.text div{
+    color: white;
+    font-weight:bold ;
+    font-size: 60px;
+    text-shadow: 0 5 5px white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.text label{
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    width: 5px;
+    margin-bottom: 10px;
+
+}
+.inp{
+    width: 450px;
+    margin-top: 20px;
+    height: auto;
+}
+.ipt input{
     padding: 20px;
-    width: 350px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-right: 5px;
+    border: none;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: inset 5px 10px 10px rgb(157, 156, 156);
+}
+.ipt button{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(59, 52, 52);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 3px 5px white
+}
+.conten{
+    display: table-row;
+    width: 100%;
+
+}
+article {
+    width: 70%;
+    float: left;
+}
+article hr {
+    width: 98%;
+
+}
+aside {
+    width: 30%;
+    float: right;
 }
 
-.form-group {
+.document {
+    display: flex;
+    padding: 10px;
+
+}
+.document p {
+    text-align: justify;
+    margin: 0;
+    margin-left: 25px;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+.document img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+.form{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.form .ipt-1{
+    font-weight: bold;
+    font-variant: small-caps;
     margin-bottom: 20px;
 }
-h2{
-    color: white;
-    font-weight: 500;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    border-bottom: 2px solid red;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-label {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"] {
+.ipt-1 input{
     width: 90%;
-    padding: 10px 15px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: transparent;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    border-color: #28a745;
-}
-
-input[type="text"] ~ span::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #2b382e4a;
-    transition: width 0.3s;
-}
-
-input[type="text"]:focus ~ span::before {
-    width: 100%;
-}
-
-
-input[type="date"] {
-    width: 90%;
-    padding: 10px 15px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: transparent;
-    transition: border-color 0.3s;
-}
-
-input[type="date"]:focus {
-    outline: none;
-    border-color: #28a745;
-}
-
-input[type="date"] ~ span::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #2b382e4a;
-    transition: width 0.3s;
-}
-
-input[type="date"]:focus ~ span::before {
-    width: 100%;
-}
-
-button[type="submit"] {
-    background-color: #2b382e4a;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
+    padding: 10px;
     border-radius: 5px;
-    margin-left: 80%;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin-top: 5px;
+    border: 1px solid gray;
 }
-
-button[type="submit"]:hover {
-    background-color: #2b382ecb;
+.btn button{
+    background-color: rgba(35, 33, 33, 0.98);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    width: 80px;
+    border: none;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.85);
 }
-.form-group > .radio{
-    display: inline-block;
-}
-.form-group label {
-    display: block;
-    margin-bottom: .5rem;
-
-}
-.form-group span{
-    color: red;
-    font-size: 11px;
-    display: block;
-    margin-bottom: 15px;
+footer{
+    margin-top: 10px;
+    line-height: 50px;
+    background-color: rgba(73, 101, 101, 0.616);
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
